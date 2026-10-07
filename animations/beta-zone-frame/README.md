@@ -23,16 +23,13 @@ O ciclo de destaque principal dura aproximadamente **7,2 segundos**. Os moviment
 
 ## Camadas
 
-Todos os assets abaixo usam o mesmo canvas quadrado e transparência, facilitando o alinhamento por sobreposição:
+A arte raster principal foi separada nas três camadas que precisam preservar exatamente o desenho original:
 
-- `assets/base-frame.webp`
-- `assets/mascot.webp`
-- `assets/cz-emblem.webp`
-- `assets/icons-left.webp`
-- `assets/icons-right.webp`
-- `assets/beta-title.webp`
-- `assets/founder-badge.webp`
-- `assets/floating-effects.webp`
+- `assets/base-frame.webp` — estrutura metálica quadrada.
+- `assets/mascot.webp` — mascote oficial da Creative ZONE.
+- `assets/cz-emblem.webp` — emblema CZ superior.
+
+Os demais elementos são camadas independentes desenhadas diretamente em HTML/CSS/SVG: sete ícones temáticos, título BETA ZONE, selo Founder Edition, cristais, órbita, energia e partículas. Isso permite animar cada peça individualmente sem dependências externas.
 
 A demonstração é feita com HTML/CSS/JavaScript puro, sem bibliotecas ou CDNs. O navegador aplica `prefers-reduced-motion` e os controles permitem que o usuário inicie a animação explicitamente.
 
