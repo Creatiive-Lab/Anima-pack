@@ -4,9 +4,9 @@ Coleção de animações da Creative Lab, desenvolvida por Israel Miguel. Cada a
 
 | ID | Animação | Demonstração |
 |---|---|---|
-| 001 | Moldura CreativeZone | [Abrir HTML](animations/creativezone-frame/index.html) |
+| 001 | Moldura CreativeZone | [▶ Ver animação ao vivo](https://htmlpreview.github.io/?https://github.com/Inosuke-Company/Anima-pack/blob/main/animations/creativezone-frame/index.html) |
 
-Baixe o repositório e abra `index.html` no navegador. O visualizador de código do GitHub não executa HTML. A demonstração da moldura também funciona sozinha, offline.
+Clique em **Ver animação ao vivo** para abrir a demonstração pelo HTML Preview. A página carrega o HTML público deste repositório e o exibe no navegador, sem download. Como alternativa offline, baixe a pasta e abra `index.html`.
 
 [Documentação da moldura](animations/creativezone-frame/README.md).
 
@@ -30,4 +30,6 @@ A moldura CreativeZone é a primeira implementação desse padrão:
 
 ## Visualização na web
 
-Os arquivos estão preparados para hospedagem estática, incluindo GitHub Pages. Quando a coleção estiver hospedada, cada arte será acessível pelo caminho `animations/<nome-da-arte>/`. A página de código do GitHub não executa a demonstração; salvar os arquivos no repositório, por si só, não ativa a hospedagem.
+Os links **Ver animação ao vivo** usam o serviço externo HTML Preview para renderizar os arquivos públicos da branch `main`. Esse serviço não é o GitHub Pages, que permanece desativado. A disponibilidade da prévia depende do serviço e do acesso ao repositório.
+
+Para cada nova arte, o link de demonstração no README deve usar uma URL de página publicada ou o formato `https://htmlpreview.github.io/?https://github.com/Inosuke-Company/Anima-pack/blob/main/animations/<nome-da-arte>/index.html`. Não use um link relativo para o HTML nessa coluna, pois o GitHub abrirá o código. Os links relativos dentro das próprias páginas continuam adequados para hospedagem estática.
