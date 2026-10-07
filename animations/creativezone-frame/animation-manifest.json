@@ -1,0 +1,31 @@
+{
+  "id": "creativezone-frame",
+  "title": "Animação da moldura CreativeZone",
+  "collection": "Anima Pack",
+  "version": "1.0.0",
+  "format": "hybrid-svg-css",
+  "transparent": true,
+  "viewBox": [
+    0,
+    0,
+    1254,
+    1254
+  ],
+  "preview": "index.html",
+  "asset": "creativezone-animated.svg",
+  "layers": [
+    "left-code",
+    "left-gear",
+    "left-cloud",
+    "right-community",
+    "right-idea",
+    "right-bars",
+    "top-crystal",
+    "energy-ribbons",
+    "hexagon-lights",
+    "led-sequence",
+    "micro-sparkles",
+    "planet-orbit",
+    "logo-shine"
+  ]
+}

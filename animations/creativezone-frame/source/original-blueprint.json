@@ -1,0 +1,164 @@
+{
+  "project": "CreativeZone profile frame animation pack",
+  "files": {
+    "svg": "/mnt/data/creativezone_production_ready.svg",
+    "purpose": "SVG vetorial reconstruído com grupos e IDs mais detalhados para animação"
+  },
+  "recommended_tools": [
+    "After Effects + Bodymovin/Lottie",
+    "Rive",
+    "SVGator",
+    "LottieFiles Creator",
+    "Figma + plugin de animação/exportação"
+  ],
+  "animation_plan": [
+    {
+      "target": "glow_outer_main",
+      "type": "opacityPulse",
+      "duration_ms": 1800,
+      "loop": true,
+      "values": {
+        "from": 0.5,
+        "to": 0.95
+      }
+    },
+    {
+      "target": "top_gem_group",
+      "type": "floatY + glowPulse",
+      "duration_ms": 2200,
+      "loop": true,
+      "values": {
+        "y_from": 0,
+        "y_to": -8,
+        "opacity_from": 0.9,
+        "opacity_to": 1.0
+      }
+    },
+    {
+      "target": "top_hexagons_left, top_hexagons_right",
+      "type": "staggerOpacity",
+      "duration_ms": 1400,
+      "loop": true,
+      "values": {
+        "opacity_from": 0.25,
+        "opacity_to": 1.0
+      }
+    },
+    {
+      "target": "ribbon_left, ribbon_right",
+      "type": "trimPath",
+      "duration_ms": 2000,
+      "loop": true,
+      "values": {
+        "start_from": 0,
+        "end_to": 100
+      }
+    },
+    {
+      "target": "gear_teeth",
+      "type": "rotation",
+      "duration_ms": 2500,
+      "loop": true,
+      "values": {
+        "deg_from": 0,
+        "deg_to": 360
+      }
+    },
+    {
+      "target": "bulb_outline, bulb_ray_top, bulb_ray_left, bulb_ray_right",
+      "type": "flicker",
+      "duration_ms": 900,
+      "loop": true,
+      "values": {
+        "opacity_from": 0.45,
+        "opacity_to": 1.0
+      }
+    },
+    {
+      "target": "bar_1, bar_2, bar_3",
+      "type": "growBars",
+      "duration_ms": 1200,
+      "loop": true,
+      "values": {
+        "height_sequence": [
+          18,
+          40,
+          26,
+          53
+        ]
+      }
+    },
+    {
+      "target": "planet_group",
+      "type": "floatY",
+      "duration_ms": 3000,
+      "loop": true,
+      "values": {
+        "y_from": 0,
+        "y_to": 5
+      }
+    },
+    {
+      "target": "orbit_front, orbit_back",
+      "type": "strokeSweep",
+      "duration_ms": 2200,
+      "loop": true,
+      "values": {
+        "offset_from": 0,
+        "offset_to": 100
+      }
+    },
+    {
+      "target": "logo_group",
+      "type": "shineSweep",
+      "duration_ms": 1800,
+      "loop": true,
+      "values": {
+        "suggestion": "mask gradient passando horizontalmente"
+      }
+    },
+    {
+      "target": "micro_accents_group, side_led_dots_left, side_led_dots_right",
+      "type": "staggerBlink",
+      "duration_ms": 800,
+      "loop": true,
+      "values": {
+        "opacity_from": 0.2,
+        "opacity_to": 1.0
+      }
+    }
+  ],
+  "groups": [
+    "frame_root",
+    "glow_outer_main",
+    "frame_shell_outer",
+    "frame_shell_inner_border",
+    "top_gem_group",
+    "top_hexagons_left",
+    "top_hexagons_right",
+    "side_ribbons_group",
+    "left_icon_stack",
+    "left_code_group",
+    "left_gear_group",
+    "left_cloud_group",
+    "right_icon_stack",
+    "right_users_group",
+    "right_idea_group",
+    "right_bars_group",
+    "corner_hexes_bottom_left",
+    "corner_hexes_bottom_right",
+    "bottom_blades_left",
+    "bottom_blades_right",
+    "side_led_dots_left",
+    "side_led_dots_right",
+    "bottom_plate_group",
+    "planet_group",
+    "logo_group",
+    "micro_accents_group"
+  ],
+  "notes": [
+    "Se for usar Lottie, importe o SVG em um software com camadas ou reconstrua as camadas com base nos IDs.",
+    "Rive e SVGator tendem a funcionar muito bem com essa organização.",
+    "Se você quiser, depois posso montar um JSON de animação ainda mais detalhado pensando em Lottie especificamente."
+  ]
+}
