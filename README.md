@@ -38,9 +38,9 @@ Use apenas artes e recursos de sua autoria ou para os quais você tenha permiss�
 | ID | Animação | Demonstração |
 |---|---|---|
 | 001 | Moldura CreativeZone | [▶ Ver animação ao vivo](https://htmlpreview.github.io/?https://github.com/Creatiive-Lab/Anima-pack/blob/main/animations/creativezone-frame/index.html) |
-| 002 | **Beta ZONE · Founder Edition** | [▶ Ver animação ao vivo](https://htmlpreview.github.io/?https://github.com/Creatiive-Lab/Anima-pack/blob/main/animations/beta-zone-frame/index.html) |
+| 002 | **Beta ZONE · Founder Edition** | [▶ Ver animação ao vivo](https://raw.githack.com/Creatiive-Lab/Anima-pack/main/animations/beta-zone-frame/index.html) |
 
-Clique em **Ver animação ao vivo** para abrir a demonstração pelo HTML Preview. A página carrega o HTML público deste repositório e o exibe no navegador, sem download. Como alternativa offline, baixe a pasta e abra `index.html`.
+Clique em **Ver animação ao vivo** para abrir a demonstração renderizada diretamente no navegador. A Beta ZONE usa um endereço estável do RawGitHack ligado à branch `main`, evitando a tela em branco que o HTML Preview pode apresentar em alguns navegadores móveis. Como alternativa offline, baixe a pasta e abra `index.html`.
 
 [Documentação da moldura CreativeZone](animations/creativezone-frame/README.md) · [Documentação da Beta ZONE](animations/beta-zone-frame/README.md).
 
