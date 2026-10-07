@@ -4,7 +4,7 @@ Moldura quadrada e limitada da **Creative ZONE**, criada para identificar os pri
 
 ## Ver a animação
 
-[▶ Ver animação ao vivo](https://raw.githack.com/Creatiive-Lab/Anima-pack/main/animations/beta-zone-frame/index.html)
+[▶ Ver animação ao vivo](https://raw.githack.com/Creatiive-Lab/Anima-pack/133a456816e69455eeaa882c5b50a410ef198f3c/animations/beta-zone-frame/index.html)
 
 A demonstração é servida por um endereço estável ligado à branch `main` e permite carregar uma foto local, alternar o fundo, testar a moldura em 180 px e 96 px, pausar, reiniciar e mudar a velocidade. A foto escolhida nunca é enviada para um servidor.
 
