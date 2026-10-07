@@ -4,7 +4,7 @@ Moldura quadrada com centro e exterior transparentes. Criada para os avatares do
 
 ## Ver a animação
 
-[▶ Ver animação ao vivo](https://htmlpreview.github.io/?https://github.com/Inosuke-Company/Anima-pack/blob/main/animations/creativezone-frame/index.html) — abre a demonstração no navegador pelo serviço HTML Preview.
+[▶ Ver animação ao vivo](https://htmlpreview.github.io/?https://github.com/Creatiive-Lab/Anima-pack/blob/main/animations/creativezone-frame/index.html) — abre a demonstração no navegador pelo serviço HTML Preview.
 
 Para usar offline: Abra `index.html` em um navegador moderno. É um arquivo independente: a arte, estilos e controles estão incorporados. Funciona sem instalação, servidor ou plano pago. Escolha uma foto local, altere fundo e tamanho, pause ou ajuste a velocidade. A foto nunca é enviada a um servidor. O estado inicial usa as iniciais CZ, não uma foto de outra pessoa.
 
