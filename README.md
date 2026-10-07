@@ -1,6 +1,35 @@
-# Anima Pack
+# Anima Pack · Molduras da Creative ZONE
 
-Coleção de animações da Creative Lab, desenvolvida por Israel Miguel. Cada animação fica em uma pasta independente.
+**Molduras exclusivas para os avatares de quem faz a Creative ZONE acontecer.**
+
+O Anima Pack é o repositório colaborativo de criação de molduras de avatar para o fórum **Creative ZONE**. Aqui, ideias viram artes e animações que dão personalidade aos perfis e ajudam a construir a identidade visual da nossa comunidade.
+
+Queremos que cada membro possa se expressar também pelo seu avatar. Por isso, convidamos designers, ilustradores, desenvolvedores, animadores e pessoas curiosas a participar: proponha um tema, desenhe uma moldura, anime uma criação ou ajude a melhorar uma demonstração.
+
+**Gostaríamos de ver toda a comunidade criando com a gente.** As molduras aprovadas serão incorporadas ao fórum para uso pelos membros da Creative ZONE. Sua contribuição pode se tornar parte do dia a dia de muitas pessoas na comunidade.
+
+## Crie uma moldura. Deixe sua marca.
+
+Você pode contribuir com:
+
+- Molduras originais, estáticas ou animadas.
+- Temas para eventos, conquistas e momentos especiais da comunidade.
+- Melhorias de desempenho, acessibilidade e compatibilidade.
+- Demonstrações em HTML, documentação, ideias e sugestões.
+
+Não precisa chegar com tudo pronto. Abra uma issue para apresentar uma ideia ou envie um pull request com sua criação. Vamos construir esta coleção juntos, respeitando a autoria e dando crédito a quem participa.
+
+## Como participar
+
+1. Consulte as molduras existentes e escolha uma proposta original.
+2. Crie sua arte em uma pasta própria: `animations/<nome-da-arte>/`.
+3. Inclua um `index.html` funcional para que todos possam experimentar a moldura no navegador.
+4. Documente a autoria, os recursos utilizados, as permissões de uso e as instruções de integração.
+5. Envie um pull request com uma descrição da proposta e sua demonstração.
+
+Use apenas artes e recursos de sua autoria ou para os quais você tenha permissão de uso e distribuição. A inclusão no fórum passa por revisão da equipe, considerando a identidade da Creative ZONE, a legibilidade dos avatares, a transparência e o desempenho das animações em computadores e celulares.
+
+## Experimente as molduras
 
 | ID | Animação | Demonstração |
 |---|---|---|
@@ -33,3 +62,7 @@ A moldura CreativeZone é a primeira implementação desse padrão:
 Os links **Ver animação ao vivo** usam o serviço externo HTML Preview para renderizar os arquivos públicos da branch `main`. Esse serviço não é o GitHub Pages, que permanece desativado. A disponibilidade da prévia depende do serviço e do acesso ao repositório.
 
 Para cada nova arte, o link de demonstração no README deve usar uma URL de página publicada ou o formato `https://htmlpreview.github.io/?https://github.com/Inosuke-Company/Anima-pack/blob/main/animations/<nome-da-arte>/index.html`. Não use um link relativo para o HTML nessa coluna, pois o GitHub abrirá o código. Os links relativos dentro das próprias páginas continuam adequados para hospedagem estática.
+
+---
+
+Uma iniciativa da **Creative ZONE**, criada por **Israel Miguel · Creative Lab** e aberta à participação da comunidade. Os créditos de cada contribuição devem permanecer junto à respectiva arte.
