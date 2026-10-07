@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./banner.png" alt="Creative ZONE — Anima Pack" width="100%">
+</p>
+
 # Anima Pack · Molduras da Creative ZONE
 
 **Molduras exclusivas para os avatares de quem faz a Creative ZONE acontecer.**
