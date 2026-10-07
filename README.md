@@ -37,11 +37,12 @@ Use apenas artes e recursos de sua autoria ou para os quais você tenha permiss�
 
 | ID | Animação | Demonstração |
 |---|---|---|
-| 001 | Moldura CreativeZone | [▶ Ver animação ao vivo](https://htmlpreview.github.io/?https://github.com/Inosuke-Company/Anima-pack/blob/main/animations/creativezone-frame/index.html) |
+| 001 | Moldura CreativeZone | [▶ Ver animação ao vivo](https://htmlpreview.github.io/?https://github.com/Creatiive-Lab/Anima-pack/blob/main/animations/creativezone-frame/index.html) |
+| 002 | **Beta ZONE · Founder Edition** | [▶ Ver animação ao vivo](https://htmlpreview.github.io/?https://github.com/Creatiive-Lab/Anima-pack/blob/main/animations/beta-zone-frame/index.html) |
 
 Clique em **Ver animação ao vivo** para abrir a demonstração pelo HTML Preview. A página carrega o HTML público deste repositório e o exibe no navegador, sem download. Como alternativa offline, baixe a pasta e abra `index.html`.
 
-[Documentação da moldura](animations/creativezone-frame/README.md).
+[Documentação da moldura CreativeZone](animations/creativezone-frame/README.md) · [Documentação da Beta ZONE](animations/beta-zone-frame/README.md).
 
 Para novas animações: use `animations/<nome>/` e acrescente uma entrada aqui e na página inicial.
 
@@ -65,7 +66,7 @@ A moldura CreativeZone é a primeira implementação desse padrão:
 
 Os links **Ver animação ao vivo** usam o serviço externo HTML Preview para renderizar os arquivos públicos da branch `main`. Esse serviço não é o GitHub Pages, que permanece desativado. A disponibilidade da prévia depende do serviço e do acesso ao repositório.
 
-Para cada nova arte, o link de demonstração no README deve usar uma URL de página publicada ou o formato `https://htmlpreview.github.io/?https://github.com/Inosuke-Company/Anima-pack/blob/main/animations/<nome-da-arte>/index.html`. Não use um link relativo para o HTML nessa coluna, pois o GitHub abrirá o código. Os links relativos dentro das próprias páginas continuam adequados para hospedagem estática.
+Para cada nova arte, o link de demonstração no README deve usar uma URL de página publicada ou o formato `https://htmlpreview.github.io/?https://github.com/Creatiive-Lab/Anima-pack/blob/main/animations/<nome-da-arte>/index.html`. Não use um link relativo para o HTML nessa coluna, pois o GitHub abrirá o código. Os links relativos dentro das próprias páginas continuam adequados para hospedagem estática.
 
 ---
 
