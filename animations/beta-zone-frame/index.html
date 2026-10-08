@@ -1,2 +1,41 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Beta ZONE · Founder Edition</title><style>:root{--bg:#09090d;--accent:#ff304f}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:var(--bg);color:#fff;font-family:system-ui;display:grid;place-items:center}.wrap{text-align:center}.stage{position:relative;width:min(78vw,520px);aspect-ratio:1}.layer{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none}.avatar{z-index:1;display:grid;place-items:center;font-size:100px;color:#ffdce2;text-shadow:0 0 30px #ff405a}.base{z-index:3;animation:pulse 5s ease-in-out infinite}.mascot{z-index:4}.emblem{z-index:5}.glow{z-index:6;animation:glow 3s infinite}.title{font-size:32px;font-weight:900;color:var(--accent);margin-top:20px}button{margin-top:20px;padding:12px 20px;border-radius:10px;background:var(--accent);color:white;border:0}@keyframes pulse{50%{filter:brightness(1.3) drop-shadow(0 0 18px #ff405a)}}@keyframes glow{50%{opacity:.8;filter:brightness(1.5)}} </style></head><body><div class="wrap"><div class="stage"><div class="layer avatar">CZ</div><img class="layer base" src="assets/base-frame.webp"><img class="layer mascot" src="assets/mascot.webp"><img class="layer emblem" src="assets/cz-emblem.webp"><div class="layer glow"></div></div><div class="title">Beta ZONE</div><button onclick="location.reload()">Reiniciar</button></div></body></html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Beta ZONE · Founder Edition</title>
+<style>
+:root{--bg:#09090d;--accent:#ff304f}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--bg);color:#fff;font-family:system-ui;display:grid;place-items:center}
+.wrap{text-align:center}
+.stage{position:relative;width:min(78vw,520px);aspect-ratio:1}
+.layer{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.avatar{z-index:1;display:grid;place-items:center;font-size:100px;color:#ffdce2;text-shadow:0 0 30px #ff405a}
+.base{z-index:20;animation:pulse 5s ease-in-out infinite}
+.mascot{z-index:70}
+.emblem{z-index:50;animation:float 7.2s ease-in-out infinite}
+.full{z-index:10;display:none}
+.glow{z-index:90;animation:glow 3s infinite}
+.title{font-size:32px;font-weight:900;color:var(--accent);margin-top:20px}
+button{margin-top:20px;padding:12px 20px;border-radius:10px;background:var(--accent);color:white;border:0}
+@keyframes pulse{50%{filter:brightness(1.3) drop-shadow(0 0 18px #ff405a)}}
+@keyframes glow{50%{opacity:.8;filter:brightness(1.5)}}
+@keyframes float{50%{transform:translateY(-3px)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="stage">
+<div class="layer avatar">CZ</div>
+<img class="layer full" src="assets/full-frame.webp">
+<img class="layer base" src="assets/base-frame.webp">
+<img class="layer emblem" src="assets/cz-emblem.webp">
+<img class="layer mascot" src="assets/mascot.webp">
+<div class="layer glow"></div>
+</div>
+<div class="title">Beta ZONE</div>
+<button onclick="location.reload()">Reiniciar</button>
+</div>
+</body>
+</html>
