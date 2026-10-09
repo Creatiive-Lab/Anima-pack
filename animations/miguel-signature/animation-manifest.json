@@ -13,5 +13,11 @@
   ],
   "preview": "index.html",
   "asset": "animation.json",
-  "atlas": "assets/atlas.webp"
+  "atlas": "assets/atlas.webp",
+  "embed": "embed.html",
+  "embedAspectRatio": "2172/724",
+  "embedSandbox": [
+    "allow-scripts",
+    "allow-same-origin"
+  ]
 }
