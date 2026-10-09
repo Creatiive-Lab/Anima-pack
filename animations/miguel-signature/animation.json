@@ -998,3 +998,570 @@
           "brightness": 1.2
         },
         "shine": {
+          "duration": 3900,
+          "delay": 950,
+          "opacity": 0.3
+        }
+      },
+      "tracks": [
+        {
+          "target": "motion",
+          "duration": 4200,
+          "delay": 250,
+          "direction": "alternate",
+          "easing": "ease-in-out",
+          "keyframes": [
+            {
+              "offset": 0,
+              "transform": "translateX(-2px)",
+              "filter": "brightness(.99) contrast(1.02)"
+            },
+            {
+              "offset": 0.55,
+              "transform": "translateX(3px)",
+              "filter": "brightness(1.18) contrast(1.08)"
+            },
+            {
+              "offset": 1,
+              "transform": "translateX(0px)",
+              "filter": "brightness(1.02) contrast(1.04)"
+            }
+          ]
+        },
+        {
+          "target": "glow",
+          "duration": 1500,
+          "delay": 700,
+          "direction": "alternate",
+          "easing": "ease-in-out",
+          "keyframes": [
+            {
+              "opacity": 0.02,
+              "offset": 0
+            },
+            {
+              "opacity": 0.16,
+              "offset": 0.55
+            },
+            {
+              "opacity": 0.03,
+              "offset": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crown",
+      "label": "Coroa",
+      "sprite": "brand",
+      "rect": [
+        1024,
+        282,
+        1162,
+        354
+      ],
+      "sourceRect": [
+        1018,
+        263,
+        1159,
+        342
+      ],
+      "z": 44,
+      "origin": "50% 90%",
+      "parallax": {
+        "x": 1.7,
+        "y": 2.4
+      },
+      "fx": {
+        "glow": {
+          "opacity": 0.12,
+          "blur": 6,
+          "brightness": 1.36
+        },
+        "echo": {
+          "count": 1,
+          "offset": 4,
+          "opacity": 0.12,
+          "duration": 1800
+        }
+      },
+      "tracks": [
+        {
+          "target": "motion",
+          "duration": 2800,
+          "delay": 90,
+          "direction": "alternate",
+          "easing": "ease-in-out",
+          "keyframes": [
+            {
+              "offset": 0,
+              "transform": "translateY(2px) rotate(-1deg) scale(.97)",
+              "filter": "brightness(.98)"
+            },
+            {
+              "offset": 0.48,
+              "transform": "translateY(-6px) rotate(1.4deg) scale(1.06)",
+              "filter": "brightness(1.30) drop-shadow(0 0 12px rgba(255,26,26,.8))"
+            },
+            {
+              "offset": 1,
+              "transform": "translateY(1px) rotate(-.25deg) scale(1)",
+              "filter": "brightness(1.05)"
+            }
+          ]
+        },
+        {
+          "target": "glow",
+          "duration": 1400,
+          "direction": "alternate",
+          "easing": "ease-in-out",
+          "keyframes": [
+            {
+              "opacity": 0.05,
+              "offset": 0
+            },
+            {
+              "opacity": 0.22,
+              "offset": 0.5
+            },
+            {
+              "opacity": 0.08,
+              "offset": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "character-left",
+      "label": "Personagem esquerdo",
+      "sprite": "character-left",
+      "rect": [
+        101,
+        29,
+        774,
+        512
+      ],
+      "sourceRect": [
+        64,
+        31,
+        913,
+        672
+      ],
+      "z": 50,
+      "origin": "56% 72%",
+      "parallax": {
+        "x": 6.8,
+        "y": 3.4
+      },
+      "fx": {
+        "glow": {
+          "opacity": 0.06,
+          "blur": 5,
+          "brightness": 1.18
+        }
+      },
+      "tracks": [
+        {
+          "target": "motion",
+          "duration": 4700,
+          "delay": 0,
+          "direction": "alternate",
+          "easing": "ease-in-out",
+          "keyframes": [
+            {
+              "offset": 0,
+              "transform": "translate3d(-1px,2px,0) rotate(-.25deg)",
+              "filter": "brightness(1.0)"
+            },
+            {
+              "offset": 0.5,
+              "transform": "translate3d(3px,-6px,0) rotate(.6deg)",
+              "filter": "brightness(1.08)"
+            },
+            {
+              "offset": 1,
+              "transform": "translate3d(0px,1px,0) rotate(-.08deg)",
+              "filter": "brightness(1.02)"
+            }
+          ]
+        },
+        {
+          "target": "glow",
+          "duration": 2000,
+          "delay": 420,
+          "direction": "alternate",
+          "easing": "ease-in-out",
+          "keyframes": [
+            {
+              "opacity": 0.01,
+              "offset": 0
+            },
+            {
+              "opacity": 0.08,
+              "offset": 0.5
+            },
+            {
+              "opacity": 0.02,
+              "offset": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "character-right",
+      "label": "Personagem direito",
+      "sprite": "character-right",
+      "rect": [
+        1648,
+        10,
+        2062,
+        724
+      ],
+      "sourceRect": [
+        1639,
+        21,
+        2044,
+        701
+      ],
+      "z": 51,
+      "origin": "45% 66%",
+      "parallax": {
+        "x": -7.2,
+        "y": 4.0
+      },
+      "fx": {
+        "glow": {
+          "opacity": 0.06,
+          "blur": 5,
+          "brightness": 1.18
+        }
+      },
+      "tracks": [
+        {
+          "target": "motion",
+          "duration": 5400,
+          "delay": 180,
+          "direction": "alternate-reverse",
+          "easing": "ease-in-out",
+          "keyframes": [
+            {
+              "offset": 0,
+              "transform": "translate3d(1px,1px,0) rotate(.35deg)",
+              "filter": "brightness(1.0)"
+            },
+            {
+              "offset": 0.5,
+              "transform": "translate3d(-2px,-7px,0) rotate(-.7deg)",
+              "filter": "brightness(1.08)"
+            },
+            {
+              "offset": 1,
+              "transform": "translate3d(0px,2px,0) rotate(.16deg)",
+              "filter": "brightness(1.02)"
+            }
+          ]
+        },
+        {
+          "target": "glow",
+          "duration": 2150,
+          "delay": 600,
+          "direction": "alternate",
+          "easing": "ease-in-out",
+          "keyframes": [
+            {
+              "opacity": 0.01,
+              "offset": 0
+            },
+            {
+              "opacity": 0.08,
+              "offset": 0.5
+            },
+            {
+              "opacity": 0.02,
+              "offset": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "energy-left",
+      "label": "Energia esquerda",
+      "sprite": "energy",
+      "rect": [
+        0,
+        184,
+        829,
+        652
+      ],
+      "sourceRect": [
+        7,
+        180,
+        830,
+        612
+      ],
+      "z": 61,
+      "blend": "screen",
+      "parallax": {
+        "x": 4.0,
+        "y": 2.3
+      },
+      "fx": {
+        "glow": {
+          "opacity": 0.05,
+          "blur": 7,
+          "brightness": 1.2
+        }
+      },
+      "tracks": [
+        {
+          "target": "motion",
+          "duration": 1950,
+          "delay": 70,
+          "direction": "alternate",
+          "easing": "ease-in-out",
+          "keyframes": [
+            {
+              "offset": 0,
+              "opacity": 0.03,
+              "transform": "translateX(-1px) scale(.998)",
+              "filter": "brightness(.95)"
+            },
+            {
+              "offset": 0.18,
+              "opacity": 0.11,
+              "transform": "translateX(1px) scale(1.003)",
+              "filter": "brightness(1.18) drop-shadow(0 0 6px rgba(255,0,0,.45))"
+            },
+            {
+              "offset": 0.38,
+              "opacity": 0.05,
+              "transform": "translateX(0px) scale(1)",
+              "filter": "brightness(1.01)"
+            },
+            {
+              "offset": 0.72,
+              "opacity": 0.14,
+              "transform": "translateX(2px) scale(1.004)",
+              "filter": "brightness(1.25) drop-shadow(0 0 7px rgba(255,16,16,.55))"
+            },
+            {
+              "offset": 1,
+              "opacity": 0.04,
+              "transform": "translateX(0px) scale(1)",
+              "filter": "brightness(1.0)"
+            }
+          ]
+        },
+        {
+          "target": "glow",
+          "duration": 2450,
+          "delay": 220,
+          "direction": "alternate",
+          "easing": "ease-in-out",
+          "keyframes": [
+            {
+              "opacity": 0.01,
+              "offset": 0
+            },
+            {
+              "opacity": 0.09,
+              "offset": 0.45
+            },
+            {
+              "opacity": 0.03,
+              "offset": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "energy-center",
+      "label": "Energia central",
+      "sprite": "energy",
+      "rect": [
+        647,
+        184,
+        1528,
+        652
+      ],
+      "sourceRect": [
+        650,
+        180,
+        1525,
+        612
+      ],
+      "z": 62,
+      "blend": "screen",
+      "parallax": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "fx": {
+        "glow": {
+          "opacity": 0.05,
+          "blur": 7,
+          "brightness": 1.2
+        }
+      },
+      "tracks": [
+        {
+          "target": "motion",
+          "duration": 1620,
+          "delay": 330,
+          "direction": "alternate",
+          "easing": "steps(5, end)",
+          "keyframes": [
+            {
+              "offset": 0,
+              "opacity": 0.03,
+              "transform": "translateX(-1px) scale(.998)",
+              "filter": "brightness(.95)"
+            },
+            {
+              "offset": 0.18,
+              "opacity": 0.11,
+              "transform": "translateX(1px) scale(1.003)",
+              "filter": "brightness(1.18) drop-shadow(0 0 6px rgba(255,0,0,.45))"
+            },
+            {
+              "offset": 0.38,
+              "opacity": 0.05,
+              "transform": "translateX(0px) scale(1)",
+              "filter": "brightness(1.01)"
+            },
+            {
+              "offset": 0.72,
+              "opacity": 0.14,
+              "transform": "translateX(2px) scale(1.004)",
+              "filter": "brightness(1.25) drop-shadow(0 0 7px rgba(255,16,16,.55))"
+            },
+            {
+              "offset": 1,
+              "opacity": 0.04,
+              "transform": "translateX(0px) scale(1)",
+              "filter": "brightness(1.0)"
+            }
+          ]
+        },
+        {
+          "target": "glow",
+          "duration": 2120,
+          "delay": 480,
+          "direction": "alternate",
+          "easing": "ease-in-out",
+          "keyframes": [
+            {
+              "opacity": 0.01,
+              "offset": 0
+            },
+            {
+              "opacity": 0.09,
+              "offset": 0.45
+            },
+            {
+              "opacity": 0.03,
+              "offset": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "energy-right",
+      "label": "Energia direita",
+      "sprite": "energy",
+      "rect": [
+        1347,
+        184,
+        2172,
+        652
+      ],
+      "sourceRect": [
+        1345,
+        180,
+        2164,
+        612
+      ],
+      "z": 63,
+      "blend": "screen",
+      "parallax": {
+        "x": -4.0,
+        "y": 2.5
+      },
+      "fx": {
+        "glow": {
+          "opacity": 0.05,
+          "blur": 7,
+          "brightness": 1.2
+        }
+      },
+      "tracks": [
+        {
+          "target": "motion",
+          "duration": 2380,
+          "delay": 210,
+          "direction": "alternate-reverse",
+          "easing": "ease-in-out",
+          "keyframes": [
+            {
+              "offset": 0,
+              "opacity": 0.03,
+              "transform": "translateX(-1px) scale(.998)",
+              "filter": "brightness(.95)"
+            },
+            {
+              "offset": 0.18,
+              "opacity": 0.11,
+              "transform": "translateX(1px) scale(1.003)",
+              "filter": "brightness(1.18) drop-shadow(0 0 6px rgba(255,0,0,.45))"
+            },
+            {
+              "offset": 0.38,
+              "opacity": 0.05,
+              "transform": "translateX(0px) scale(1)",
+              "filter": "brightness(1.01)"
+            },
+            {
+              "offset": 0.72,
+              "opacity": 0.14,
+              "transform": "translateX(2px) scale(1.004)",
+              "filter": "brightness(1.25) drop-shadow(0 0 7px rgba(255,16,16,.55))"
+            },
+            {
+              "offset": 1,
+              "opacity": 0.04,
+              "transform": "translateX(0px) scale(1)",
+              "filter": "brightness(1.0)"
+            }
+          ]
+        },
+        {
+          "target": "glow",
+          "duration": 2880,
+          "delay": 360,
+          "direction": "alternate",
+          "easing": "ease-in-out",
+          "keyframes": [
+            {
+              "opacity": 0.01,
+              "offset": 0
+            },
+            {
+              "opacity": 0.09,
+              "offset": 0.45
+            },
+            {
+              "opacity": 0.03,
+              "offset": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
