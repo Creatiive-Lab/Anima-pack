@@ -3,7 +3,11 @@
   "title": "Assinatura Miguel · Creative ZONE",
   "version": "2.0.0",
   "format": "json-waapi-atlas",
-  "canvas": { "width": 2172, "height": 724, "transparent": true },
+  "canvas": {
+    "width": 2172,
+    "height": 724,
+    "transparent": true
+  },
   "loop": true,
   "atlas": {
     "src": "assets/atlas.webp",
@@ -11,15 +15,132 @@
     "height": 1711,
     "scale": 0.6,
     "sprites": {
-      "character-right": { "atlas": [6, 6, 243, 408], "bbox": [1639, 21, 2044, 701] },
-      "character-left": { "atlas": [255, 6, 509, 385], "bbox": [64, 31, 913, 672] },
-      "terminal-right": { "atlas": [770, 6, 347, 364], "bbox": [1527, 66, 2106, 672] },
-      "terminal-left": { "atlas": [6, 420, 328, 356], "bbox": [44, 76, 591, 670] },
-      "frame": { "atlas": [6, 782, 1286, 272], "bbox": [15, 181, 2158, 634] },
-      "logo-miguel": { "atlas": [6, 1060, 811, 272], "bbox": [448, 158, 1799, 611] },
-      "energy": { "atlas": [6, 1338, 1294, 259], "bbox": [7, 180, 2164, 612] },
-      "brand": { "atlas": [6, 1603, 395, 102], "bbox": [772, 263, 1430, 433] },
-      "nav": { "atlas": [407, 1603, 757, 68], "bbox": [488, 166, 1749, 280] }
+      "character-right": {
+        "atlas": [
+          6,
+          6,
+          243,
+          408
+        ],
+        "bbox": [
+          1639,
+          21,
+          2044,
+          701
+        ]
+      },
+      "character-left": {
+        "atlas": [
+          255,
+          6,
+          509,
+          385
+        ],
+        "bbox": [
+          64,
+          31,
+          913,
+          672
+        ]
+      },
+      "terminal-right": {
+        "atlas": [
+          770,
+          6,
+          347,
+          364
+        ],
+        "bbox": [
+          1527,
+          66,
+          2106,
+          672
+        ]
+      },
+      "terminal-left": {
+        "atlas": [
+          6,
+          420,
+          328,
+          356
+        ],
+        "bbox": [
+          44,
+          76,
+          591,
+          670
+        ]
+      },
+      "frame": {
+        "atlas": [
+          6,
+          782,
+          1286,
+          272
+        ],
+        "bbox": [
+          15,
+          181,
+          2158,
+          634
+        ]
+      },
+      "logo-miguel": {
+        "atlas": [
+          6,
+          1060,
+          811,
+          272
+        ],
+        "bbox": [
+          448,
+          158,
+          1799,
+          611
+        ]
+      },
+      "energy": {
+        "atlas": [
+          6,
+          1338,
+          1294,
+          259
+        ],
+        "bbox": [
+          7,
+          180,
+          2164,
+          612
+        ]
+      },
+      "brand": {
+        "atlas": [
+          6,
+          1603,
+          395,
+          102
+        ],
+        "bbox": [
+          772,
+          263,
+          1430,
+          433
+        ]
+      },
+      "nav": {
+        "atlas": [
+          407,
+          1603,
+          757,
+          68
+        ],
+        "bbox": [
+          488,
+          166,
+          1749,
+          280
+        ]
+      }
     }
   },
   "interaction": {
@@ -28,26 +149,59 @@
     "autoPauseWhenHidden": true
   },
   "procedural": {
-    "particles": { "enabled": true, "count": 28, "speed": 0.32, "opacity": 0.72, "seed": 43 },
-    "sweep": { "enabled": true, "duration": 6100, "delay": 900 },
-    "scanlines": { "enabled": true, "opacity": 0.055 }
+    "particles": {
+      "enabled": true,
+      "count": 28,
+      "speed": 0.32,
+      "opacity": 0.72,
+      "seed": 43
+    },
+    "sweep": {
+      "enabled": true,
+      "duration": 6100,
+      "delay": 900
+    },
+    "scanlines": {
+      "enabled": true,
+      "opacity": 0.055
+    }
   },
   "layers": [
     {
       "id": "frame",
       "label": "Estrutura metálica",
       "sprite": "frame",
-      "rect": [15, 181, 2158, 634],
+      "rect": [
+        15,
+        181,
+        2158,
+        634
+      ],
       "z": 10,
-      "parallax": { "x": 1.2, "y": 0.8 },
+      "parallax": {
+        "x": 1.2,
+        "y": 0.8
+      },
       "animation": {
         "duration": 7200,
         "easing": "ease-in-out",
         "direction": "alternate",
         "keyframes": [
-          { "offset": 0, "transform": "scale(1)", "filter": "brightness(0.96) contrast(1.05)" },
-          { "offset": 0.52, "transform": "scale(1.002)", "filter": "brightness(1.05) contrast(1.08)" },
-          { "offset": 1, "transform": "scale(1)", "filter": "brightness(0.99) contrast(1.05)" }
+          {
+            "offset": 0,
+            "transform": "scale(1)",
+            "filter": "brightness(0.96) contrast(1.05)"
+          },
+          {
+            "offset": 0.52,
+            "transform": "scale(1.002)",
+            "filter": "brightness(1.05) contrast(1.08)"
+          },
+          {
+            "offset": 1,
+            "transform": "scale(1)",
+            "filter": "brightness(0.99) contrast(1.05)"
+          }
         ]
       }
     },
@@ -55,18 +209,38 @@
       "id": "terminal-left",
       "label": "Terminal CZ esquerdo",
       "sprite": "terminal-left",
-      "rect": [44, 76, 591, 670],
+      "rect": [
+        44,
+        76,
+        591,
+        670
+      ],
       "z": 22,
       "origin": "34% 62%",
-      "parallax": { "x": 3.6, "y": 1.8 },
+      "parallax": {
+        "x": 3.6,
+        "y": 1.8
+      },
       "animation": {
         "duration": 5200,
         "easing": "ease-in-out",
         "direction": "alternate",
         "keyframes": [
-          { "offset": 0, "transform": "rotate(-0.7deg) scale(0.995)", "filter": "brightness(0.95) drop-shadow(0 0 4px #ff1010)" },
-          { "offset": 0.45, "transform": "rotate(1.4deg) scale(1.007)", "filter": "brightness(1.20) drop-shadow(0 0 16px #ff1616)" },
-          { "offset": 1, "transform": "rotate(-0.2deg) scale(1)", "filter": "brightness(1.02) drop-shadow(0 0 8px #ff1010)" }
+          {
+            "offset": 0,
+            "transform": "rotate(-0.7deg) scale(0.995)",
+            "filter": "brightness(0.95) drop-shadow(0 0 4px #ff1010)"
+          },
+          {
+            "offset": 0.45,
+            "transform": "rotate(1.4deg) scale(1.007)",
+            "filter": "brightness(1.20) drop-shadow(0 0 16px #ff1616)"
+          },
+          {
+            "offset": 1,
+            "transform": "rotate(-0.2deg) scale(1)",
+            "filter": "brightness(1.02) drop-shadow(0 0 8px #ff1010)"
+          }
         ]
       }
     },
@@ -74,18 +248,38 @@
       "id": "terminal-right",
       "label": "Terminal engrenagem direito",
       "sprite": "terminal-right",
-      "rect": [1527, 66, 2106, 672],
+      "rect": [
+        1527,
+        66,
+        2106,
+        672
+      ],
       "z": 22,
       "origin": "67% 62%",
-      "parallax": { "x": -3.3, "y": 1.6 },
+      "parallax": {
+        "x": -3.3,
+        "y": 1.6
+      },
       "animation": {
         "duration": 4700,
         "easing": "ease-in-out",
         "direction": "alternate-reverse",
         "keyframes": [
-          { "offset": 0, "transform": "rotate(0.8deg) scale(1)", "filter": "brightness(0.98) drop-shadow(0 0 5px #ff1010)" },
-          { "offset": 0.55, "transform": "rotate(-1.5deg) scale(1.008)", "filter": "brightness(1.22) drop-shadow(0 0 17px #ff1616)" },
-          { "offset": 1, "transform": "rotate(0.15deg) scale(0.998)", "filter": "brightness(1.03) drop-shadow(0 0 8px #ff1010)" }
+          {
+            "offset": 0,
+            "transform": "rotate(0.8deg) scale(1)",
+            "filter": "brightness(0.98) drop-shadow(0 0 5px #ff1010)"
+          },
+          {
+            "offset": 0.55,
+            "transform": "rotate(-1.5deg) scale(1.008)",
+            "filter": "brightness(1.22) drop-shadow(0 0 17px #ff1616)"
+          },
+          {
+            "offset": 1,
+            "transform": "rotate(0.15deg) scale(0.998)",
+            "filter": "brightness(1.03) drop-shadow(0 0 8px #ff1010)"
+          }
         ]
       }
     },
@@ -93,17 +287,37 @@
       "id": "nav-base",
       "label": "Barra superior",
       "sprite": "nav",
-      "rect": [488, 166, 1749, 280],
+      "rect": [
+        488,
+        166,
+        1749,
+        280
+      ],
       "z": 34,
-      "parallax": { "x": 1.4, "y": 2.2 },
+      "parallax": {
+        "x": 1.4,
+        "y": 2.2
+      },
       "animation": {
         "duration": 6800,
         "easing": "ease-in-out",
         "direction": "alternate",
         "keyframes": [
-          { "offset": 0, "transform": "translateY(0px)", "filter": "brightness(0.98)" },
-          { "offset": 0.5, "transform": "translateY(-2px)", "filter": "brightness(1.10) drop-shadow(0 0 8px #b60000)" },
-          { "offset": 1, "transform": "translateY(1px)", "filter": "brightness(1.00)" }
+          {
+            "offset": 0,
+            "transform": "translateY(0px)",
+            "filter": "brightness(0.98)"
+          },
+          {
+            "offset": 0.5,
+            "transform": "translateY(-2px)",
+            "filter": "brightness(1.10) drop-shadow(0 0 8px #b60000)"
+          },
+          {
+            "offset": 1,
+            "transform": "translateY(1px)",
+            "filter": "brightness(1.00)"
+          }
         ]
       }
     },
@@ -111,7 +325,12 @@
       "id": "nav-vip",
       "label": "Menu · Torne-se VIP",
       "sprite": "nav",
-      "rect": [665, 190, 918, 251],
+      "rect": [
+        665,
+        190,
+        918,
+        251
+      ],
       "z": 35,
       "blend": "screen",
       "animation": {
@@ -120,9 +339,21 @@
         "easing": "ease-in-out",
         "direction": "alternate",
         "keyframes": [
-          { "offset": 0, "opacity": 0.20, "filter": "brightness(1)" },
-          { "offset": 0.55, "opacity": 0.75, "filter": "brightness(1.45)" },
-          { "offset": 1, "opacity": 0.25, "filter": "brightness(1.05)" }
+          {
+            "offset": 0,
+            "opacity": 0.2,
+            "filter": "brightness(1)"
+          },
+          {
+            "offset": 0.55,
+            "opacity": 0.75,
+            "filter": "brightness(1.45)"
+          },
+          {
+            "offset": 1,
+            "opacity": 0.25,
+            "filter": "brightness(1.05)"
+          }
         ]
       }
     },
@@ -130,7 +361,12 @@
       "id": "nav-ad",
       "label": "Menu · Anuncie no CZ",
       "sprite": "nav",
-      "rect": [910, 190, 1175, 251],
+      "rect": [
+        910,
+        190,
+        1175,
+        251
+      ],
       "z": 35,
       "blend": "screen",
       "animation": {
@@ -139,9 +375,21 @@
         "easing": "ease-in-out",
         "direction": "alternate-reverse",
         "keyframes": [
-          { "offset": 0, "opacity": 0.18, "filter": "brightness(1)" },
-          { "offset": 0.5, "opacity": 0.78, "filter": "brightness(1.55)" },
-          { "offset": 1, "opacity": 0.22, "filter": "brightness(1.08)" }
+          {
+            "offset": 0,
+            "opacity": 0.18,
+            "filter": "brightness(1)"
+          },
+          {
+            "offset": 0.5,
+            "opacity": 0.78,
+            "filter": "brightness(1.55)"
+          },
+          {
+            "offset": 1,
+            "opacity": 0.22,
+            "filter": "brightness(1.08)"
+          }
         ]
       }
     },
@@ -149,7 +397,12 @@
       "id": "nav-downloads",
       "label": "Menu · Downloads",
       "sprite": "nav",
-      "rect": [1160, 190, 1395, 251],
+      "rect": [
+        1160,
+        190,
+        1395,
+        251
+      ],
       "z": 35,
       "blend": "screen",
       "animation": {
@@ -158,9 +411,21 @@
         "easing": "ease-in-out",
         "direction": "alternate",
         "keyframes": [
-          { "offset": 0, "opacity": 0.17, "filter": "brightness(1)" },
-          { "offset": 0.62, "opacity": 0.72, "filter": "brightness(1.5)" },
-          { "offset": 1, "opacity": 0.22, "filter": "brightness(1.02)" }
+          {
+            "offset": 0,
+            "opacity": 0.17,
+            "filter": "brightness(1)"
+          },
+          {
+            "offset": 0.62,
+            "opacity": 0.72,
+            "filter": "brightness(1.5)"
+          },
+          {
+            "offset": 1,
+            "opacity": 0.22,
+            "filter": "brightness(1.02)"
+          }
         ]
       }
     },
@@ -168,7 +433,12 @@
       "id": "nav-highlights",
       "label": "Menu · Destaques",
       "sprite": "nav",
-      "rect": [1377, 190, 1645, 251],
+      "rect": [
+        1377,
+        190,
+        1645,
+        251
+      ],
       "z": 35,
       "blend": "screen",
       "animation": {
@@ -177,9 +447,21 @@
         "easing": "ease-in-out",
         "direction": "alternate-reverse",
         "keyframes": [
-          { "offset": 0, "opacity": 0.18, "filter": "brightness(1)" },
-          { "offset": 0.48, "opacity": 0.73, "filter": "brightness(1.52)" },
-          { "offset": 1, "opacity": 0.2, "filter": "brightness(1.03)" }
+          {
+            "offset": 0,
+            "opacity": 0.18,
+            "filter": "brightness(1)"
+          },
+          {
+            "offset": 0.48,
+            "opacity": 0.73,
+            "filter": "brightness(1.52)"
+          },
+          {
+            "offset": 1,
+            "opacity": 0.2,
+            "filter": "brightness(1.03)"
+          }
         ]
       }
     },
@@ -187,58 +469,130 @@
       "id": "logo-miguel",
       "label": "Logo Miguel",
       "sprite": "logo-miguel",
-      "rect": [448, 158, 1799, 611],
+      "rect": [
+        448,
+        218,
+        1799,
+        671
+      ],
       "z": 40,
       "origin": "51% 58%",
-      "parallax": { "x": 2.1, "y": 1.6 },
+      "parallax": {
+        "x": 2.1,
+        "y": 1.6
+      },
       "animation": {
         "duration": 3300,
         "easing": "ease-in-out",
         "direction": "alternate",
         "keyframes": [
-          { "offset": 0, "transform": "translateY(1px) scale(0.998)", "filter": "brightness(1) drop-shadow(0 0 3px rgba(255,0,0,0.55))" },
-          { "offset": 0.52, "transform": "translateY(-2px) scale(1.006)", "filter": "brightness(1.18) drop-shadow(0 0 16px rgba(255,25,25,0.9))" },
-          { "offset": 1, "transform": "translateY(0px) scale(1)", "filter": "brightness(1.03) drop-shadow(0 0 7px rgba(255,0,0,0.7))" }
+          {
+            "offset": 0,
+            "transform": "translateY(1px) scale(0.998)",
+            "filter": "brightness(1) drop-shadow(0 0 3px rgba(255,0,0,0.55))"
+          },
+          {
+            "offset": 0.52,
+            "transform": "translateY(-2px) scale(1.006)",
+            "filter": "brightness(1.18) drop-shadow(0 0 16px rgba(255,25,25,0.9))"
+          },
+          {
+            "offset": 1,
+            "transform": "translateY(0px) scale(1)",
+            "filter": "brightness(1.03) drop-shadow(0 0 7px rgba(255,0,0,0.7))"
+          }
         ]
-      }
+      },
+      "sourceRect": [
+        448,
+        158,
+        1799,
+        611
+      ]
     },
     {
       "id": "subtitle",
       "label": "CreativeZone",
       "sprite": "brand",
-      "rect": [772, 342, 1430, 433],
+      "rect": [
+        850,
+        505,
+        1508,
+        596
+      ],
       "z": 43,
       "blend": "normal",
-      "parallax": { "x": 1.2, "y": 1.1 },
+      "parallax": {
+        "x": 1.2,
+        "y": 1.1
+      },
       "animation": {
         "duration": 4100,
         "delay": 250,
         "easing": "ease-in-out",
         "direction": "alternate",
         "keyframes": [
-          { "offset": 0, "transform": "translateX(-1px)", "filter": "brightness(0.98) contrast(1.02)" },
-          { "offset": 0.55, "transform": "translateX(2px)", "filter": "brightness(1.18) contrast(1.08) drop-shadow(0 0 9px rgba(255,0,0,0.55))" },
-          { "offset": 1, "transform": "translateX(0px)", "filter": "brightness(1.01) contrast(1.04)" }
+          {
+            "offset": 0,
+            "transform": "translateX(-1px)",
+            "filter": "brightness(0.98) contrast(1.02)"
+          },
+          {
+            "offset": 0.55,
+            "transform": "translateX(2px)",
+            "filter": "brightness(1.18) contrast(1.08) drop-shadow(0 0 9px rgba(255,0,0,0.55))"
+          },
+          {
+            "offset": 1,
+            "transform": "translateX(0px)",
+            "filter": "brightness(1.01) contrast(1.04)"
+          }
         ]
-      }
+      },
+      "sourceRect": [
+        772,
+        342,
+        1430,
+        433
+      ]
     },
     {
       "id": "crown",
       "label": "Coroa",
       "sprite": "brand",
-      "rect": [930, 263, 1245, 362],
+      "rect": [
+        930,
+        263,
+        1245,
+        362
+      ],
       "z": 44,
       "origin": "50% 90%",
-      "parallax": { "x": 1.8, "y": 2.5 },
+      "parallax": {
+        "x": 1.8,
+        "y": 2.5
+      },
       "animation": {
         "duration": 2800,
         "delay": 90,
         "easing": "ease-in-out",
         "direction": "alternate",
         "keyframes": [
-          { "offset": 0, "transform": "translateY(2px) rotate(-1deg) scale(.97)", "filter": "brightness(.95) drop-shadow(0 0 4px #d60000)" },
-          { "offset": 0.48, "transform": "translateY(-5px) rotate(1.5deg) scale(1.05)", "filter": "brightness(1.45) drop-shadow(0 0 18px #ff1a1a)" },
-          { "offset": 1, "transform": "translateY(1px) rotate(-.3deg) scale(1)", "filter": "brightness(1.08) drop-shadow(0 0 8px #ff0808)" }
+          {
+            "offset": 0,
+            "transform": "translateY(2px) rotate(-1deg) scale(.97)",
+            "filter": "brightness(.95) drop-shadow(0 0 4px #d60000)"
+          },
+          {
+            "offset": 0.48,
+            "transform": "translateY(-5px) rotate(1.5deg) scale(1.05)",
+            "filter": "brightness(1.45) drop-shadow(0 0 18px #ff1a1a)"
+          },
+          {
+            "offset": 1,
+            "transform": "translateY(1px) rotate(-.3deg) scale(1)",
+            "filter": "brightness(1.08) drop-shadow(0 0 8px #ff0808)"
+          }
         ]
       }
     },
@@ -246,18 +600,35 @@
       "id": "character-left",
       "label": "Personagem esquerdo",
       "sprite": "character-left",
-      "rect": [64, 31, 913, 672],
+      "rect": [
+        64,
+        31,
+        913,
+        672
+      ],
       "z": 50,
       "origin": "56% 72%",
-      "parallax": { "x": 7.2, "y": 3.5 },
+      "parallax": {
+        "x": 7.2,
+        "y": 3.5
+      },
       "animation": {
         "duration": 4600,
         "easing": "ease-in-out",
         "direction": "alternate",
         "keyframes": [
-          { "offset": 0, "transform": "translate3d(-1px,2px,0) rotate(-.25deg)" },
-          { "offset": 0.5, "transform": "translate3d(2px,-5px,0) rotate(.55deg)" },
-          { "offset": 1, "transform": "translate3d(0px,1px,0) rotate(-.1deg)" }
+          {
+            "offset": 0,
+            "transform": "translate3d(-1px,2px,0) rotate(-.25deg)"
+          },
+          {
+            "offset": 0.5,
+            "transform": "translate3d(2px,-5px,0) rotate(.55deg)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate3d(0px,1px,0) rotate(-.1deg)"
+          }
         ]
       }
     },
@@ -265,19 +636,36 @@
       "id": "character-right",
       "label": "Personagem direito",
       "sprite": "character-right",
-      "rect": [1639, 21, 2044, 701],
+      "rect": [
+        1639,
+        21,
+        2044,
+        701
+      ],
       "z": 51,
       "origin": "45% 66%",
-      "parallax": { "x": -7.6, "y": 4.1 },
+      "parallax": {
+        "x": -7.6,
+        "y": 4.1
+      },
       "animation": {
         "duration": 5350,
         "delay": 180,
         "easing": "ease-in-out",
         "direction": "alternate-reverse",
         "keyframes": [
-          { "offset": 0, "transform": "translate3d(1px,1px,0) rotate(.35deg)" },
-          { "offset": 0.46, "transform": "translate3d(-2px,-7px,0) rotate(-.72deg)" },
-          { "offset": 1, "transform": "translate3d(0px,2px,0) rotate(.15deg)" }
+          {
+            "offset": 0,
+            "transform": "translate3d(1px,1px,0) rotate(.35deg)"
+          },
+          {
+            "offset": 0.46,
+            "transform": "translate3d(-2px,-7px,0) rotate(-.72deg)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate3d(0px,2px,0) rotate(.15deg)"
+          }
         ]
       }
     },
@@ -285,19 +673,42 @@
       "id": "energy-left",
       "label": "Energia esquerda",
       "sprite": "energy",
-      "rect": [7, 180, 830, 612],
+      "rect": [
+        7,
+        180,
+        830,
+        612
+      ],
       "z": 61,
       "blend": "screen",
-      "parallax": { "x": 4.4, "y": 2.4 },
+      "parallax": {
+        "x": 4.4,
+        "y": 2.4
+      },
       "animation": {
         "duration": 1950,
         "delay": 70,
         "easing": "ease-in-out",
         "direction": "alternate",
         "keyframes": [
-          { "offset": 0, "opacity": 0.58, "transform": "translateX(-2px) scale(.997)", "filter": "brightness(.92)" },
-          { "offset": 0.42, "opacity": 0.94, "transform": "translateX(2px) scale(1.008)", "filter": "brightness(1.42) drop-shadow(0 0 9px #ff0000)" },
-          { "offset": 1, "opacity": 0.68, "transform": "translateX(0px) scale(1)", "filter": "brightness(1.05)" }
+          {
+            "offset": 0,
+            "opacity": 0.58,
+            "transform": "translateX(-2px) scale(.997)",
+            "filter": "brightness(.92)"
+          },
+          {
+            "offset": 0.42,
+            "opacity": 0.94,
+            "transform": "translateX(2px) scale(1.008)",
+            "filter": "brightness(1.42) drop-shadow(0 0 9px #ff0000)"
+          },
+          {
+            "offset": 1,
+            "opacity": 0.68,
+            "transform": "translateX(0px) scale(1)",
+            "filter": "brightness(1.05)"
+          }
         ]
       }
     },
@@ -305,7 +716,12 @@
       "id": "energy-center",
       "label": "Energia central",
       "sprite": "energy",
-      "rect": [650, 180, 1525, 612],
+      "rect": [
+        650,
+        180,
+        1525,
+        612
+      ],
       "z": 62,
       "blend": "screen",
       "animation": {
@@ -314,11 +730,31 @@
         "easing": "steps(6, end)",
         "direction": "alternate",
         "keyframes": [
-          { "offset": 0, "opacity": 0.34, "filter": "brightness(.8)" },
-          { "offset": 0.18, "opacity": 0.78, "filter": "brightness(1.55)" },
-          { "offset": 0.37, "opacity": 0.48, "filter": "brightness(1.05)" },
-          { "offset": 0.72, "opacity": 0.95, "filter": "brightness(1.7) drop-shadow(0 0 11px #ff1010)" },
-          { "offset": 1, "opacity": 0.5, "filter": "brightness(1)" }
+          {
+            "offset": 0,
+            "opacity": 0.34,
+            "filter": "brightness(.8)"
+          },
+          {
+            "offset": 0.18,
+            "opacity": 0.78,
+            "filter": "brightness(1.55)"
+          },
+          {
+            "offset": 0.37,
+            "opacity": 0.48,
+            "filter": "brightness(1.05)"
+          },
+          {
+            "offset": 0.72,
+            "opacity": 0.95,
+            "filter": "brightness(1.7) drop-shadow(0 0 11px #ff1010)"
+          },
+          {
+            "offset": 1,
+            "opacity": 0.5,
+            "filter": "brightness(1)"
+          }
         ]
       }
     },
@@ -326,19 +762,42 @@
       "id": "energy-right",
       "label": "Energia direita",
       "sprite": "energy",
-      "rect": [1345, 180, 2164, 612],
+      "rect": [
+        1345,
+        180,
+        2164,
+        612
+      ],
       "z": 63,
       "blend": "screen",
-      "parallax": { "x": -4.2, "y": 2.6 },
+      "parallax": {
+        "x": -4.2,
+        "y": 2.6
+      },
       "animation": {
         "duration": 2380,
         "delay": 210,
         "easing": "ease-in-out",
         "direction": "alternate-reverse",
         "keyframes": [
-          { "offset": 0, "opacity": 0.52, "transform": "translateX(2px) scale(1)", "filter": "brightness(.95)" },
-          { "offset": 0.5, "opacity": 0.9, "transform": "translateX(-3px) scale(1.009)", "filter": "brightness(1.48) drop-shadow(0 0 10px #ff0000)" },
-          { "offset": 1, "opacity": 0.64, "transform": "translateX(0px) scale(.999)", "filter": "brightness(1.08)" }
+          {
+            "offset": 0,
+            "opacity": 0.52,
+            "transform": "translateX(2px) scale(1)",
+            "filter": "brightness(.95)"
+          },
+          {
+            "offset": 0.5,
+            "opacity": 0.9,
+            "transform": "translateX(-3px) scale(1.009)",
+            "filter": "brightness(1.48) drop-shadow(0 0 10px #ff0000)"
+          },
+          {
+            "offset": 1,
+            "opacity": 0.64,
+            "transform": "translateX(0px) scale(.999)",
+            "filter": "brightness(1.08)"
+          }
         ]
       }
     }
