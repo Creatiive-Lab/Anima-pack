@@ -2,10 +2,15 @@
   "id": "miguel-signature",
   "title": "Assinatura Miguel · Creative ZONE",
   "collection": "Anima Pack",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "format": "json-waapi-atlas",
   "transparent": true,
-  "viewBox": [0, 0, 2172, 724],
+  "viewBox": [
+    0,
+    0,
+    2172,
+    724
+  ],
   "preview": "index.html",
   "asset": "animation.json",
   "atlas": "assets/atlas.webp",
