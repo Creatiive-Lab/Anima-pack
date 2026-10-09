@@ -218,7 +218,7 @@
 
   async function init() {
     try {
-      const res = await fetch('animation.json', {cache:'no-store'});
+      const res = await fetch('animation.json?v=2.1.0', {cache:'no-store'});
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       state.config = await res.json();
       document.title = `${state.config.title} · Anima Pack`;
