@@ -16,19 +16,35 @@
     const a = state.config.atlas;
     const sprite = a.sprites[spriteName];
     if (!sprite) throw new Error(`Sprite ausente: ${spriteName}`);
+
     const [ax, ay] = sprite.atlas;
     const [bx0, by0] = sprite.bbox;
     const [x0, y0, x1, y1] = rect;
-    const [sx0, sy0] = sourceRect;
-    const bgW = a.width / a.scale;
-    const bgH = a.height / a.scale;
+    const [sx0, sy0, sx1, sy1] = sourceRect;
+
+    const destW = Math.max(1, x1 - x0);
+    const destH = Math.max(1, y1 - y0);
+    const sourceW = Math.max(1, sx1 - sx0);
+    const sourceH = Math.max(1, sy1 - sy0);
+
+    // O atlas guarda cada sprite reduzido por atlas.scale. Convertemos de volta
+    // ao espaço lógico da arte e depois escalamos o recorte de origem para o
+    // retângulo de destino. Assim sourceRect e rect podem ter tamanhos diferentes.
+    const scaleX = destW / sourceW;
+    const scaleY = destH / sourceH;
+    const atlasLogicalW = a.width / a.scale;
+    const atlasLogicalH = a.height / a.scale;
     const sourceX = ax / a.scale + (sx0 - bx0);
     const sourceY = ay / a.scale + (sy0 - by0);
+
     return {
-      left: `${x0}px`, top: `${y0}px`, width: `${x1 - x0}px`, height: `${y1 - y0}px`,
+      left: `${x0}px`,
+      top: `${y0}px`,
+      width: `${destW}px`,
+      height: `${destH}px`,
       backgroundImage: `url("${a.src}")`,
-      backgroundSize: `${bgW}px ${bgH}px`,
-      backgroundPosition: `${-sourceX}px ${-sourceY}px`
+      backgroundSize: `${atlasLogicalW * scaleX}px ${atlasLogicalH * scaleY}px`,
+      backgroundPosition: `${-sourceX * scaleX}px ${-sourceY * scaleY}px`
     };
   }
 
