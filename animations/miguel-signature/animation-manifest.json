@@ -1,0 +1,30 @@
+{
+  "id": "miguel-signature",
+  "title": "Assinatura Miguel · Creative ZONE",
+  "collection": "Anima Pack",
+  "version": "2.0.0",
+  "format": "json-waapi-atlas",
+  "transparent": true,
+  "viewBox": [0, 0, 2172, 724],
+  "preview": "index.html",
+  "asset": "animation.json",
+  "atlas": "assets/atlas.webp",
+  "layers": [
+    "frame",
+    "terminal-left",
+    "terminal-right",
+    "nav-base",
+    "nav-vip",
+    "nav-ad",
+    "nav-downloads",
+    "nav-highlights",
+    "logo-miguel",
+    "subtitle",
+    "crown",
+    "character-left",
+    "character-right",
+    "energy-left",
+    "energy-center",
+    "energy-right"
+  ]
+}
