@@ -12,17 +12,18 @@
   const particleCanvas = $('#particles');
   const ctx = particleCanvas.getContext('2d');
 
-  function spriteStyle(spriteName, rect) {
+  function spriteStyle(spriteName, rect, sourceRect = rect) {
     const a = state.config.atlas;
     const sprite = a.sprites[spriteName];
     if (!sprite) throw new Error(`Sprite ausente: ${spriteName}`);
     const [ax, ay] = sprite.atlas;
     const [bx0, by0] = sprite.bbox;
     const [x0, y0, x1, y1] = rect;
+    const [sx0, sy0] = sourceRect;
     const bgW = a.width / a.scale;
     const bgH = a.height / a.scale;
-    const sourceX = ax / a.scale + (x0 - bx0);
-    const sourceY = ay / a.scale + (y0 - by0);
+    const sourceX = ax / a.scale + (sx0 - bx0);
+    const sourceY = ay / a.scale + (sy0 - by0);
     return {
       left: `${x0}px`, top: `${y0}px`, width: `${x1 - x0}px`, height: `${y1 - y0}px`,
       backgroundImage: `url("${a.src}")`,
@@ -38,7 +39,7 @@
     wrap.style.zIndex = layer.z ?? 0;
     wrap.style.setProperty('--px', '0px');
     wrap.style.setProperty('--py', '0px');
-    Object.assign(wrap.style, spriteStyle(layer.sprite, layer.rect));
+    Object.assign(wrap.style, spriteStyle(layer.sprite, layer.rect, layer.sourceRect || layer.rect));
     const motion = document.createElement('div');
     motion.className = 'layer-motion';
     motion.style.backgroundImage = wrap.style.backgroundImage;
