@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="color-scheme" content="dark">
 <title>Assinatura Miguel · CreativeZone</title>
 <link rel="stylesheet" href="styles.css">
 <style>
@@ -11,7 +10,8 @@
     margin:0;
     width:100%;
     min-height:0;
-    background:transparent!important;
+    background:none!important;
+    background-color:transparent!important;
     overflow:hidden;
   }
   body{min-height:0}
@@ -24,9 +24,24 @@
   .stage-shell{
     width:100%;
     border-radius:0;
-    background:transparent;
+    background:none!important;
+    background-color:transparent!important;
   }
-  #scene{overflow:visible}
+  #scene{
+    overflow:visible;
+    background:none!important;
+    background-color:transparent!important;
+  }
+  #fx-canvas{
+    background:transparent!important;
+  }
+  /* Full-stage demo overlays darken light forum themes. The forum embed
+     keeps only the artwork/layer effects and transparent procedural canvas. */
+  #backglow,
+  #scanlines,
+  #vignette{
+    display:none!important;
+  }
   .embed-hidden{
     position:absolute!important;
     width:1px!important;
